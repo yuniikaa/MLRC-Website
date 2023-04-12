@@ -1,0 +1,242 @@
+<html>
+	<head>
+		<title>Web</title>
+	</head>
+	<body>
+		<u>Hello</U> <!--Underline-->
+		<i>Prime College</i> <!--Italics-->
+		<br> <!--Break-->
+		<small>Prime College</small> <!--Small Size-->
+		<big>Prime College</big> <!--Big Size-->
+		<br>
+		x<sup>2</sup> <!--Super Script-->
+		<hr> <!--Straight Line-->
+		h<sub>2</sub>o <!--Sub Script-->
+<pre> <!--Pre Formatted Text-->
+<p>
+This
+is 
+my 
+web
+technology
+class
+</p>
+</pre>
+
+	<br><img src="hello.jpg" alt="No image found" ></br> <!--Insert image and if no image then display that message-->
+
+	<br><img src="Lakhe.jpg" alt="" height="400" width="300"></br> <!--Insert image which is inside same folder as web-->
+ 
+	<br><img src="../Indra.jpg" alt="" height="400" width="400"></br> <!--Insert image which is outside the folder as web-->
+
+	<br><img src="./Image/Jatra.jpg" alt="" height="400" width="350"></br> <!--Insert image which is in same the folder as web and the image is inside a folder-->
+
+	<ul> <!-- unordered list-->
+		<li>Prime</li> <!--Bullet list by default-->
+		<li>NCCS</li>
+		<li>Orchid</li>
+	</ul>
+	<ul type="square">
+		<li>Prime</li> <!--Square list-->
+		<li>NCCS</li>
+		<li>Orchid</li>
+	</ul>
+<!-- type=Disc,Circle,Square-->
+<!-- Nested loop using ul inside ul-->
+	<ul>
+		<li>Prime
+		<ul>
+			<li>Bsc.Csit</li>
+			<li>BHM</li>
+		</ul>
+		</li>
+	</ul>
+
+	<ul>
+		<li>Orchid
+		<ul>
+			<li>Bsc.Csit</li>
+			<li>BHM</li>
+		</ul>
+		</li>
+	</ul>
+
+	<ol> <!-- Ordered List-->
+		<li>Prime</li> <!--1/2/3 by default-->
+		<li>Orchid</li>
+		<li>NCCS</li>
+	</ol>
+	<ol reversed> <!-- Reversed Ordered List-->
+		<li>Prime</li> <!--1/2/3 by default-->
+		<li>Orchid</li>
+		<li>NCCS</li>
+	</ol>
+	<ol type="a"> <!--Small letters alphabet ordered List-->
+		<li>Prime</li> <!--1/2/3 by default-->
+		<li>Orchid</li>
+		<li>NCCS</li>
+	</ol>
+<!--type="a/A/i/I"-->
+	<ol type="A" Start ="5"> <!--Capital letters alphabet starting from E ordered List-->
+		<li>Prime</li> <!--1/2/3 by default-->
+		<li>Orchid</li>
+		<li>NCCS</li>
+	</ol>
+	<dl>
+		<dt>HTML</dt> <!--Data Term-->
+		<dd>Hyper Text Markup Language </dd><!--Data Defination-->
+		<dt>CSS</dt>
+		<dd>Cascading Style Sheets</dd>
+		<dt>AIAX</dt>
+		<dd>Asynchoronous Java And </dd>
+	</dl>
+<!--FORM
+Start <form>
+End</form>
+Attributes
+  method=post/get
+  action="#"
+  Enctype="multipart/form-data" 
+TO MAKE TABLE::
+	<input> (Singular tag)
+Attributes of input:
+1)name(name is inputted buy the user)
+2)Type(text,number,password,Email,date,submit,radio,checkbox)
+3)readonly
+4)disabled
+	<select>  </select>
+	<textarea> </textarea>-->
+
+<h3>Form</h3>
+	
+	<form method="post" > <!-- post makes the information secure with no bookmark and no limitation and of get is used then the value is shown in URL-->
+	Name:<input type="text" name="myname" value="Ram" readonly><br>
+	<!--if value is kept then Ram is default name and it can be changed if needed and if readonly is kept then cannot be changed-->
+	Name:<input type="text" name="myname" value="Ram" disabled><br>
+	<!--if value is kept then Ram is default name and it can be changed if needed and if diabled is kept then cannot be changed and if the method is get then the value is not shown-->	
+	Name:<input type="text" name="myname" required><br>
+	<!--required makes it necessary to fill the space compulsorily-->
+	Phone:<input type="number" name="phone"><br>
+	Gender:<input type="radio" name="gender" value="m">Male
+	              <input type="radio" name="gender" value="f">Female<br>
+	Hobby:<input type="checkbox" name="cric" value="c">Cricket
+	             <input type="checkbox" name="swim" value="s">Swimming<br>
+	Eamil:<input type="email" name="prat"><br>
+	Password:<input type="password" name="pass"><br>
+	Date:<input type="date" name="dat"><br>
+
+	College<select name="College">
+		<option value="">Please Select College</option>
+		<option value="n">NCCS College</option>
+		<option value="a">Ascol</option>
+		<option value="p" Selected>Prime College </option>
+
+	<input type="Submit" value="Submit">
+	</form>
+	
+	<form method="post">
+		<fieldset> <!--to add box around form-->
+			<legend><h4>User Details</h4></legend><!--to add form details in the box around the form-->
+	Username<sup>*</sup>:<input type="text" name="user" required ><br>
+	Email<sup>*</sup>:<input type="email" name="e" required><br>
+	Password<sup>*</sup>:<input type="password" name="pass" pattern=".{8,}" required><br>
+	Country<sup>*</sup>:<input type="text" name="cou" pattern="[A-Za-z]{3}" required><br>
+	Phone No<sup>*</sup>:<input type="text" name="phone" pattern="[0-9]{10}" title="Phone No. must be exactly 10 digits" required> <br>
+	Roll:<input type="number" name="roll" min="1"><br>
+	Photo:<input type="file"><br>
+	<input type ="Submit" value="submit">
+	<input type ="Reset" value="clear">
+		</fieldset>
+	</form>
+
+	<p><h3>HTML Table</h3></p>
+
+	<table border= "1" cellspacing="0" cellpadding="5"> <!--Border gives border around each column as well as whole row, and cellspacing gives spacing around the columns
+							and cell padding gives space around the columns-->
+		<thead> <!--For head of the Table-->
+		<tr>
+			<th>S.N.</th>
+			<th>Name</th>
+			<th>Address</th>
+		</tr>
+		</thread>
+
+		<tbody> <!--For body of the table-->
+		<tr>
+			<td>1</td>
+			<td>Ram</td>
+			<td>KTM</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Shyam</td>
+			<td>PKR</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Ghanshyam</td>
+			<td>HTD</td>
+		</tr>
+		</tbody>
+	</table>
+<br>
+	<table border= "1" cellspacing="0" cellpadding="5">
+	<thead>
+		<tr>
+		<th rowspan ="2">S.N.</th>
+		<th colspan="2">Name</th>
+		<th rowspan="2">Address</th>
+		</tr>
+		<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		</tr>
+	</thead>
+	</table>
+<br>
+	<table border= "1" cellspacing= "0" cellpadding= "5">
+	<tbody>
+		<tr>
+		<td>Ram</td>
+		<td rowspan="2"> Prime </td>
+		<td rowspan="3">Kushibun</td>
+		</tr>
+		<tr>
+		<td>Hari</td>
+		</tr>
+		<tr>
+		<td>John</td>
+		<td>N/A</td>
+		</tr>
+		<tr>
+		<td rowspan="2">Harry</td>
+		<td rowspan="2">N/A</td>
+		<td>Jawlakhel</td>
+		</tr>
+		<tr>
+		
+	</tbody>
+	</table>
+<a href="https://prime.edu.np">Prime College</a> 
+
+<br>
+
+<audio controls> <!--Embedding audio and video in webpage-->
+	<source src="1.mp3" type="audio/mpeg">
+</audio>
+<br>
+<video controls height="800" width="700" autoplay muted> <!-- plays video when page is loaded-->
+	<source src="1.mp4" type ="video/mp4">
+
+<article>
+	<header>
+		<h1>Pratik</h1>
+	</header>
+	<p>
+	Kayastha
+	</p>
+</article>
+
+	</body>
+</html>
+		

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dropdown</title>
+</head>
+<body>
+	<nav class="navbar">
+<div class="droopdowns">
+	<div class="dropdown">
+		<button class="button">
+			services
+		</button>
+		<div class="dropdown-menu">
+			<button>ui/ux design</button>
+			<button>web application</button>
+			<button>seo advice</button>
+		</div>
+	</div>
+<div class="droopdowns">
+	<div class="dropdown">
+		<button class="button">
+			services
+		</button>
+		<div class="dropdown-menu">
+			<button>ui/ux design</button>
+			<button>web application</button>
+			<button>seo advice</button>
+		</div>
+	</div>
+<div class="droopdowns">
+	<div class="dropdown">
+		<button class="button">
+			services
+		</button>
+		<div class="dropdown-menu">
+			<button>ui/ux design</button>
+			<button>web application</button>
+			<button>seo advice</button>
+		</div>
+	</div>
+</div>
+</nav>
+<style>
+ .navbar{
+	background-color: green;
+	display:flex;
+	height:70px;
+	}
+button{
+	font-size:20px;
+	backgroung:transparent;
+	line-height:1;
+	}
+.button{
+	display:flex;
+	padding:0 24px;
+	heignt:100%;
+	opacity: 0.5
+	align-items:center;
+	}
+	.dropdown{
+			position: relative;
+	}
+	.dropdown-menu{
+		position:absolute;
+		top:70px;
+		width:100px;
+		padding:8px ]20px 10px;
+		visibility: hidden;
+		background-color: red;
+	}
+	.dropdown:hover .dropdown-menu{
+ 		visibility: visible;
+	}
+	.dropdown-menu>button{
+		color:red;
+		height: 40px;
+		opacity: 0.6;
+	}
+	.dropdown-menu 
+	hover .button{
+		opcaity:1;
+	}
+	button:hover{
+		background-color: red;
+		color: white;
+	}
+
+</style>
+</body>
+</html>
